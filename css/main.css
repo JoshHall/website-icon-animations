@@ -11,8 +11,6 @@ body ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100vh;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -20,12 +18,14 @@ body ul {
   display: flex;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   body ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    height: 100vh;
   }
   body ul li {
     margin: 5% auto;
