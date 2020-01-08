@@ -10,11 +10,12 @@
       src="https://kit.fontawesome.com/926f5d8720.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <ul class="btn-direction">
       <li>
-        <a href="" id="facebook">
+        <a href="" class="doNotReload" id="facebook">
           <span></span>
           <span></span>
           <span></span>
@@ -23,7 +24,7 @@
         </a>
       </li>
       <li>
-        <a href="" id="twitter">
+        <a href="" class="doNotReload" id="twitter">
           <span></span>
           <span></span>
           <span></span>
@@ -32,7 +33,7 @@
         </a>
       </li>
       <li>
-        <a href="" id="linkedin">
+        <a href="" class="doNotReload" id="linkedin">
           <span></span>
           <span></span>
           <span></span>
@@ -41,7 +42,7 @@
         </a>
       </li>
       <li>
-        <a href="" id="insta">
+        <a href="" class="doNotReload" id="insta">
           <span></span>
           <span></span>
           <span></span>
@@ -50,5 +51,11 @@
         </a>
       </li>
     </ul>
+
+    <script>
+      $('.doNotReload').click(function(e) {
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>
